@@ -1,14 +1,14 @@
 spring :
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql:3306/{MYSQL_ASSIGNMENT_DB}
-    username: { MYSQL_USER }
-    password: { MYSQL_PASSWORD }
-    jpa:
-      database: mysql
-      hibernate:
-        ddl-auto: update
-      show-sql: true
+    url: jdbc:mysql://localhost:3306/sms_assignment_db
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   data :
     rest :
       base-path : /api/v1
