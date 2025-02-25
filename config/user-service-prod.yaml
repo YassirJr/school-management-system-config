@@ -1,0 +1,14 @@
+spring :
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/{MYSQL_USER_DB}
+    username: { MYSQL_USER }
+    password: { MYSQL_PASSWORD }
+    jpa:
+      database: mysql
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  data :
+    rest :
+      base-path : /api/v1
